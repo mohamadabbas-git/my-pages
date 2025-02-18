@@ -7,18 +7,20 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #4a5d23;
-            background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/camouflage.png');
+            background-image: url('logo/military.jpg'); /* Set your background image here */
+            background-size: cover; /* Ensure the background image covers the entire body */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+            background-attachment: fixed; /* Make the background image fixed */
             text-align: center;
-            color: #fff;
+            color: #000000;
         }
         .menu-container {
             max-width: 800px;
             margin: 20px auto;
-            background: rgba(34, 40, 49, 0.9);
+            background: rgb(255, 255, 255);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
         h1 {
             color: #c4a000;
@@ -55,7 +57,7 @@
             display: flex;
             justify-content: space-between;
             padding: 8px 0;
-            border-bottom: 1px solid #777;
+            border-bottom: 1px solid #c4a000;
         }
         /* Media query for smaller screens */
         @media (max-width: 600px) {
@@ -81,7 +83,10 @@
 </head>
 <body>
     <div class="menu-container">
-        <h1>Al-Amid Grill</h1>
+        <h1>
+            <img src="logo/logo.png" alt="Al-Amid Grill Logo" style="height: 100px; vertical-align: middle; margin-right: 10px;">
+            Al-Amid Grill
+        </h1>
         
         <div class="tabs">
             <div class="tab active" data-section="sandwiches" onclick="showSection('sandwiches')">Sandwiches</div>
